@@ -4,21 +4,21 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
-                echo 'build...'
+                sh 'echo "build..."'
             }
         }
         
         stage('staging') {
             steps {
                 sh 'python --version'
-                echo 'staging...'
+                sh 'echo "staging..."'
             }
         }
 
         stage('QA') {
             steps {
                 sh 'python --version'
-                echo 'QA...'
+                sh 'echo "QA..."'
             }
         }
 
